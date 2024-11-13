@@ -31,27 +31,22 @@ body {
     border-radius: 8px;
     flex: 1; /* Kutucukların daha tombul olması için */
 }
-
 .profile-header {
     display: flex;
     align-items: center;
     margin-bottom: 1em;
 }
-
 .profile-img {
     flex: 0 0 20%; /* Profil fotoğrafının kutucuğun 1/3'ünü kaplaması için */
     margin-right: 1em;
 }
-
 .profile-img img {
     width: 100%;
     border-radius: 50%;
 }
-
 .profile-info {
     flex: 1;
 }
-
 .child-box {
     margin-top: 1em;
     padding: 1em;
@@ -59,7 +54,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 footer {
     padding-top: 5vh;
     background-color: #333;
@@ -68,4 +62,32 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: auto;
+}
+.u_linkler {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    gap: 8px;
+
+}
+.li_linkler {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.a_linkler {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.a_linkler:hover {
+    color: rgb(0, 0, 0);
+}
+.a_linkler::after {
+    color: rgb(156, 26, 26);
 }
