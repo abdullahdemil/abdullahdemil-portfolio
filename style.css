@@ -2,32 +2,32 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  /*gap: 20px;*/
   background-color: rgb(240, 240, 240);
   font-family: "Times New Roman", Times, serif;
   font-size: 13px; /* Genel yazı fontunu bir birim düşürdük */
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   justify-content: flex-end;
+  min-height: 100vh; /* Sayfanın en az viewport yüksekliğinde olmasını sağlar */
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  width: 760px; /* Yatayda daralttık */
-  height: 1080px;
+  width: 100%;
+  max-width: 1000px; /* 1080p monitörler için */
+  height: auto;
   margin-top: 1em;
   gap: 2em; /* Sütunlar arasındaki boşluk */
+  flex: 1; /* Kalan alanı kaplamasını sağlar */
 }
 
 .column {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 1.5em; /* Kutucuklar arasındaki boşluk */
 }
 
@@ -66,13 +66,14 @@ h4 {
   margin-top: -5px;
 }
 footer {
+  margin-top: 20px; /* Footer'ı en alta yapıştırır */
   padding-top: 50px;
   background-color: #333;
   color: white;
   padding: 1em;
   text-align: center;
-  width: 100vw;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: auto; /* Footer'ı en alta yapıştırır */
   margin-bottom: 0;
 }
 .u_linkler {
@@ -139,9 +140,9 @@ footer {
 
 @media (max-width: 768px) {
   .container {
-    width: 100%;
     flex-direction: column;
-    height: max-content;
+    width: 100%;
+    height: auto;
   }
   .column {
     width: 100%;
