@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1000px; /* 1080p monitörler için */
+  max-width: 800px; /* 1080p monitörler için */
   height: auto;
   margin-top: 1em;
   gap: 2em; /* Sütunlar arasındaki boşluk */
