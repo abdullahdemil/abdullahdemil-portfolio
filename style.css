@@ -189,3 +189,20 @@ footer {
   color: rgb(40, 40, 40);
   cursor: text;
 }
+
+.language-switcher {s
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#flag-icon {
+  width: 30px;
+  height: auto;
+}
