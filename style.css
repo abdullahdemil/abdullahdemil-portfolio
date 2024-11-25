@@ -12,7 +12,23 @@ body {
   justify-content: flex-end;
   min-height: 100vh; /* Sayfanın en az viewport yüksekliğinde olmasını sağlar */
 }
-
+.uppercont {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 800px; /* 1080p monitörler için */
+  height: auto;
+  margin-top: 1em;
+  gap: 0px; /* Sütunlar arasındaki boşluk */
+  flex: 1; /* Kalan alanı kaplamasını sağlar */
+}
+.langswimg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -188,21 +204,4 @@ footer {
 #referans_numara:hover {
   color: rgb(40, 40, 40);
   cursor: text;
-}
-
-.language-switcher {s
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-#language-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-#flag-icon {
-  width: 30px;
-  height: auto;
 }
