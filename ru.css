@@ -1,0 +1,211 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px; /* Genel yazı fontunu bir birim düşürdük */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: flex-end;
+  min-height: 100vh; /* Sayfanın en az viewport yüksekliğinde olmasını sağlar */
+}
+.uppercont {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 800px; /* 1080p monitörler için */
+  height: auto;
+  margin-top: 1em;
+  gap: 0px; /* Sütunlar arasındaki boşluk */
+  flex: 1; /* Kalan alanı kaplamasını sağlar */
+}
+.langswimg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#activeflag {
+  border: 2px solid rgb(69, 69, 69);
+  border-radius: 50%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 800px; /* 1080p monitörler için */
+  height: auto;
+  margin-top: 1em;
+  gap: 2em; /* Sütunlar arasındaki boşluk */
+  flex: 1; /* Kalan alanı kaplamasını sağlar */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5em; /* Kutucuklar arasındaki boşluk */
+}
+
+.box {
+  background: rgb(255, 255, 255);
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex: 1; /* Kutucukların daha tombul olması için */
+}
+.profile-header {
+  display: flex;
+  align-items: flex-start; /* Profil fotoğrafı ve hakkımızda yazısını hizalar */
+}
+.profile-img {
+  flex: 0 0 auto; /* Profil fotoğrafının kendi boyutunda kalmasını sağlar */
+  margin-right: 1em; /* Profil fotoğrafı ile hakkımızda yazısı arasındaki boşluk */
+}
+.profile-img img {
+  width: 100px; /* Profil fotoğrafının genişliğini ayarlar */
+  height: auto; /* Oranları korur */
+  border-radius: 50%;
+}
+.profile-info {
+  flex: 1; /* Kalan alanı kaplamasını sağlar */
+}
+.child-box {
+  margin-top: 1em;
+  padding: 1em;
+  background: rgb(229, 229, 229);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+h4 {
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+footer {
+  margin-top: 20px; /* Footer'ı en alta yapıştırır */
+  padding-top: 50px;
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Footer'ı en alta yapıştırır */
+  margin-bottom: 0;
+}
+.u_linkler {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  gap: 8px;
+}
+.li_linkler {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  padding-left: -25px;
+}
+
+.a_linkler {
+  text-decoration: underline;
+  color: rgb(80, 80, 80);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.a_linkler:hover {
+  color: rgb(0, 0, 0);
+}
+.a_linkler::after {
+  color: rgb(156, 26, 26);
+}
+#iletisim {
+  padding: 1em; /* İçerik ile kutu kenarları arasındaki boşluk */
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: auto; /* Genişliği içeriğe göre ayarlar */
+  flex: none; /* Flex kutu davranışını kaldırır */
+}
+#linklerim {
+  padding: 1em; /* İçerik ile kutu kenarları arasındaki boşluk */
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: auto; /* Genişliği içeriğe göre ayarlar */
+  flex: none; /* Flex kutu davranışını kaldırır */
+}
+
+.li_diller {
+  list-style-type: square;
+  font-weight: 650;
+  font-size: 16px;
+  margin: -8px 0px -8px 0px;
+}
+.span_diller {
+  font-weight: 400;
+  font-size: 11px;
+  margin: 0px;
+}
+.h3_diller {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0px 0px 18px 0px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .column {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+#p_hakkimizda {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px;
+}
+#linklerim_ul {
+  margin-left: 20px;
+}
+#mail_link {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+
+  font-size: 14px;
+}
+#referans_link {
+  text-decoration: none;
+  display: block;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  margin-top: 4px;
+  padding-left: 12px;
+  font-size: 12px;
+}
+#referans_numara {
+  text-decoration: none;
+  display: block;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  margin-top: 4px;
+  padding-left: 12px;
+  font-size: 12px;
+}
+#referans_numara:hover {
+  color: rgb(40, 40, 40);
+  cursor: text;
+}
