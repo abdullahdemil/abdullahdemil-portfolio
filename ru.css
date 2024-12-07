@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   background-color: rgb(240, 240, 240);
   font-family: "Times New Roman", Times, serif;
-  font-size: 13px; /* Genel yazı fontunu bir birim düşürdük */
+  font-size: 14px; /* Genel yazı fontunu bir birim düşürdük */
   margin: 0;
   padding: 0;
   align-items: center;
@@ -174,7 +174,7 @@ footer {
 }
 
 #p_hakkimizda {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0px;
 }
