@@ -12,6 +12,9 @@ body {
   justify-content: flex-end;
   min-height: 100vh; /* Sayfanın en az viewport yüksekliğinde olmasını sağlar */
 }
+.ucube-basliklar{
+  margin-left: 5px;
+}
 .uppercont {
   display: flex;
   flex-direction: row-reverse;
@@ -100,7 +103,7 @@ footer {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: 5px;
+  margin: 20px; /* Margin'i sıfırladık */
   padding: 0;
   gap: 8px;
 }
@@ -184,8 +187,11 @@ footer {
 #mail_link {
   text-decoration: none;
   color: rgb(80, 80, 80);
-
+  margin-left: 5px;
   font-size: 14px;
+}
+#mail_link:hover {
+  color: rgb(0, 0, 0);
 }
 #referans_link {
   text-decoration: none;
